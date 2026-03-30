@@ -3,7 +3,6 @@
 > Repositório da disciplina de **Alta Qualidade de Software** do curso de Engenharia da Computação no SENAI CIMATEC.
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Quality](https://img.shields.io/badge/Quality-Alta-brightgreen?style=for-the-badge)](https://)
 [![SENAI](https://img.shields.io/badge/SENAI-CIMATEC-red?style=for-the-badge)](https://)
 
 ---
@@ -22,23 +21,36 @@ Disciplina focada em **qualidade de software**, cobrindo tópicos como:
 
 ## 📁 Projetos
 
-### 1. Game2D Alien
+### 👾 1. Game2D Alien
 
-Jogo 2D desarrollado com **Python** utilizando a biblioteca **Pygame**.
+Jogo 2D estilo Space Invaders desenvolvido com **Python** e **Pygame**.
+
+**Estrutura:**
+```
+1. Game2D_Alien/
+├── src/
+│   ├── alien.py           # Classe do alien
+│   ├── alien_invasion.py  # Classe principal do jogo
+│   ├── bullet.py          # Classe dos tiros
+│   ├── settings.py        # Configurações do jogo
+│   └── ship.py            # Classe da nave
+└── images/
+    ├── alien.bmp          # Sprite do alien
+    └── ship.bmp           # Sprite da nave
+```
+
+**Como executar:**
+```bash
+cd "1. Game2D_Alien"
+python -m src.alien_invasion
+```
 
 | Característica | Detalhe |
 |----------------|---------|
 | **Linguagem** | Python 3.11 |
 | **Framework** | Pygame |
-| **Conceitos** | Programação de jogos, loops de jogo, sprites |
+| **Conceitos** | POO, loops de jogo, sprites, colisão |
 | **Status** | ✅ Concluído |
-
-#### 🎮 Como Executar
-
-```bash
-cd "1. Game2D_Alien"
-python main.py
-```
 
 ---
 
@@ -50,15 +62,6 @@ python main.py
 | Pygame | Biblioteca para jogos 2D |
 | Git | Controle de versão |
 | GitHub | Hospedagem de código |
-
----
-
-## 📋 Critérios de Qualidade Aplicados
-
-- ✅ **Código Limpo**: Nomes significativos, funções pequenas
-- ✅ **Testes**: Testes unitários para lógica principal
-- ✅ **Documentação**: README e comentários relevantes
-- ✅ **Versionamento**: Commits atômicos e mensagens descritivas
 
 ---
 
@@ -75,7 +78,3 @@ python main.py
 ## 📄 Licença
 
 Este projeto está sob a licença MIT — consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-> *"Stay Hard. Nunca pare de aprender."*
